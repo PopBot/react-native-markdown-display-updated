@@ -91,13 +91,13 @@ const getRenderer = (
 ) => {
   if (renderer && rules) {
     console.warn(
-      'react-native-markdown-display you are using renderer and rules at the same time. This is not possible, props.rules is ignored',
+      'react-native-markdown-display-updated you are using renderer and rules at the same time. This is not possible, props.rules is ignored',
     );
   }
 
   if (renderer && style) {
     console.warn(
-      'react-native-markdown-display you are using renderer and style at the same time. This is not possible, props.style is ignored',
+      'react-native-markdown-display-updated you are using renderer and style at the same time. This is not possible, props.style is ignored',
     );
   }
 

@@ -1,6 +1,6 @@
 {
-  "name": "react-native-markdown-display",
-  "version": "7.0.0-alpha.2",
+  "name": "react-native-markdown-display-updated-updated",
+  "version": "1.0.0",
   "description": "Markdown renderer for react-native, with CommonMark spec support + adds syntax extensions & sugar (URL autolinking, typographer), originally created by Mient-jan Stelling as react-native-markdown-renderer",
   "main": "src/index.js",
   "types": "src/index.d.ts",
@@ -12,7 +12,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iamacup/react-native-markdown-display.git"
+    "url": "https://github.com/PopBot/react-native-markdown-display-updated.git"
   },
   "keywords": [
     "react",
@@ -22,12 +22,12 @@
     "commonmark",
     "markdown-it"
   ],
-  "author": "Mient-jan Stelling and Tom Pickard + others from the community",
+  "author": "PopBot",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/iamacup/react-native-markdown-display/issues"
+    "url": "https://github.com/PopBot/react-native-markdown-display-updated/issues"
   },
-  "homepage": "https://github.com/iamacup/react-native-markdown-display/",
+  "homepage": "https://github.com/PopBot/react-native-markdown-display-updated",
   "dependencies": {
     "css-to-react-native": "^3.0.0",
     "markdown-it": "^10.0.0",
@@ -35,7 +35,7 @@
     "react-native-fit-image": "^1.5.5"
   },
   "peerDependencies": {
-    "react": "^16.2.0",
+    "react": ">=16.2.0",
     "react-native": ">=0.50.4"
   },
   "devDependencies": {

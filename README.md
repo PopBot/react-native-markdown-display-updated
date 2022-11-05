@@ -1,6 +1,8 @@
-# React Native Markdown Display [![npm version](https://badge.fury.io/js/react-native-markdown-display.svg)](https://badge.fury.io/js/react-native-markdown-display) [![Known Vulnerabilities](https://snyk.io/test/github/iamacup/react-native-markdown-display/badge.svg)](https://snyk.io/test/github/iamacup/react-native-markdown-display)
+# React Native Markdown Display Updated
 
 It a 100% compatible CommonMark renderer, a react-native markdown renderer done right. This is __not__ a web-view markdown renderer but a renderer that uses native components for all its elements. These components can be overwritten and styled as needed.
+
+This is a fork of the original React Native Markdown Display, updated for the latest version of React Native.
 
 ### Compatibility with react-native-markdown-renderer
 
@@ -10,12 +12,12 @@ This is intended to be a replacement for react-native-markdown-renderer, with a 
 
 #### Yarn
 ```npm
-yarn add react-native-markdown-display
+yarn add react-native-markdown-display-updated
 ```
 
 #### NPM
 ```npm
-npm install -S react-native-markdown-display
+npm install -S react-native-markdown-display-updated
 ```
 
 ### Get Started
@@ -24,7 +26,7 @@ npm install -S react-native-markdown-display
 import React from 'react';
 import { SafeAreaView, ScrollView, StatusBar } from 'react-native';
 
-import Markdown from 'react-native-markdown-display';
+import Markdown from 'react-native-markdown-display-updated';
 
 const copy = `# h1 Heading 8-)
 
@@ -62,9 +64,9 @@ The `<Markdown>` object takes the following common props:
 | Property | Default | Required | Description                                                      
 | --- | --- | --- | ---
 | `children` | N/A | `true` | The markdown string to render, or the [pre-processed tree](#pre-processing)
-| `style` | [source](https://github.com/iamacup/react-native-markdown-display/blob/master/src/lib/styles.js) | `false` | An object to override the styling for the various rules, [see style section below](#rules-and-styles) for more info
+| `style` | [source](https://github.com/iamacup/react-native-markdown-display-updated/blob/master/src/lib/styles.js) | `false` | An object to override the styling for the various rules, [see style section below](#rules-and-styles) for more info
 | `mergeStyle` | `true` | `false` | If true, when a style is supplied, the individual items are merged with the default styles instead of overwriting them
-| `rules` | [source](https://github.com/iamacup/react-native-markdown-display/blob/master/src/lib/renderRules.js) | `false` | An object of rules that specify how to render each markdown item, [see rules section below](#rules) for more info
+| `rules` | [source](https://github.com/iamacup/react-native-markdown-display-updated/blob/master/src/lib/renderRules.js) | `false` | An object of rules that specify how to render each markdown item, [see rules section below](#rules) for more info
 | `onLinkPress` | `import { Linking } from 'react-native';` and `Linking.openURL(url);` | `false` | A handler function to change click behaviour, [see handling links section below](#handling-links) for more info
 | `debugPrintTree` | `false` | `false` | Will print the AST tree to the console to help you see what the markdown is being translated to
 
@@ -97,7 +99,7 @@ And some additional, less used options:
 
 | iOS | Android
 | --- | ---
-| <img src="https://github.com/iamacup/react-native-markdown-display/raw/master/doc/images/ios-1.png"/>  | <img src="https://github.com/iamacup/react-native-markdown-display/raw/master/doc/images/android-1.png"/>  
+| <img src="https://github.com/iamacup/react-native-markdown-display-updated/raw/master/doc/images/ios-1.png"/>  | <img src="https://github.com/iamacup/react-native-markdown-display-updated/raw/master/doc/images/android-1.png"/>  
 
 </p>
 </details>
@@ -119,7 +121,7 @@ And some additional, less used options:
 
 | iOS | Android
 | --- | ---
-| <img src="https://github.com/iamacup/react-native-markdown-display/raw/master/doc/images/ios-2.png"/>  | <img src="https://github.com/iamacup/react-native-markdown-display/raw/master/doc/images/android-2.png"/>  
+| <img src="https://github.com/iamacup/react-native-markdown-display-updated/raw/master/doc/images/ios-2.png"/>  | <img src="https://github.com/iamacup/react-native-markdown-display-updated/raw/master/doc/images/android-2.png"/>  
 
 
 </p>
@@ -144,7 +146,7 @@ And some additional, less used options:
 
 | iOS | Android
 | --- | ---
-| <img src="https://github.com/iamacup/react-native-markdown-display/raw/master/doc/images/ios-4.png"/>  | <img src="https://github.com/iamacup/react-native-markdown-display/raw/master/doc/images/android-4.png"/>  
+| <img src="https://github.com/iamacup/react-native-markdown-display-updated/raw/master/doc/images/ios-4.png"/>  | <img src="https://github.com/iamacup/react-native-markdown-display-updated/raw/master/doc/images/android-4.png"/>  
 
 </p>
 </details>
@@ -161,7 +163,7 @@ And some additional, less used options:
 
 | iOS | Android
 | --- | ---
-| <img src="https://github.com/iamacup/react-native-markdown-display/raw/master/doc/images/ios-5.png"/>  | <img src="https://github.com/iamacup/react-native-markdown-display/raw/master/doc/images/android-5.png"/>  
+| <img src="https://github.com/iamacup/react-native-markdown-display-updated/raw/master/doc/images/ios-5.png"/>  | <img src="https://github.com/iamacup/react-native-markdown-display-updated/raw/master/doc/images/android-5.png"/>  
 
 </p>
 </details>
@@ -195,7 +197,7 @@ And some additional, less used options:
 
 | iOS | Android
 | --- | ---
-| <img src="https://github.com/iamacup/react-native-markdown-display/raw/master/doc/images/ios-6.png"/>  | <img src="https://github.com/iamacup/react-native-markdown-display/raw/master/doc/images/android-6.png"/>  
+| <img src="https://github.com/iamacup/react-native-markdown-display-updated/raw/master/doc/images/ios-6.png"/>  | <img src="https://github.com/iamacup/react-native-markdown-display-updated/raw/master/doc/images/android-6.png"/>  
 
 </p>
 </details>
@@ -234,7 +236,7 @@ And some additional, less used options:
 
 | iOS | Android
 | --- | ---
-| <img src="https://github.com/iamacup/react-native-markdown-display/raw/master/doc/images/ios-7.png"/>  | <img src="https://github.com/iamacup/react-native-markdown-display/raw/master/doc/images/android-7.png"/>  
+| <img src="https://github.com/iamacup/react-native-markdown-display-updated/raw/master/doc/images/ios-7.png"/>  | <img src="https://github.com/iamacup/react-native-markdown-display-updated/raw/master/doc/images/android-7.png"/>  
 
 </p>
 </details>
@@ -261,7 +263,7 @@ And some additional, less used options:
 
 | iOS | Android
 | --- | ---
-| <img src="https://github.com/iamacup/react-native-markdown-display/raw/master/doc/images/ios-8.png"/>  | <img src="https://github.com/iamacup/react-native-markdown-display/raw/master/doc/images/android-8.png"/>  
+| <img src="https://github.com/iamacup/react-native-markdown-display-updated/raw/master/doc/images/ios-8.png"/>  | <img src="https://github.com/iamacup/react-native-markdown-display-updated/raw/master/doc/images/android-8.png"/>  
 
 </p>
 </details>
@@ -279,7 +281,7 @@ And some additional, less used options:
 
 | iOS | Android
 | --- | ---
-| <img src="https://github.com/iamacup/react-native-markdown-display/raw/master/doc/images/ios-9.png"/>  | <img src="https://github.com/iamacup/react-native-markdown-display/raw/master/doc/images/android-9.png"/>  
+| <img src="https://github.com/iamacup/react-native-markdown-display-updated/raw/master/doc/images/ios-9.png"/>  | <img src="https://github.com/iamacup/react-native-markdown-display-updated/raw/master/doc/images/android-9.png"/>  
 
 </p>
 </details>
@@ -302,7 +304,7 @@ And some additional, less used options:
 
 | iOS | Android
 | --- | ---
-| <img src="https://github.com/iamacup/react-native-markdown-display/raw/master/doc/images/ios-10.png"/>  | <img src="https://github.com/iamacup/react-native-markdown-display/raw/master/doc/images/android-10.png"/>  
+| <img src="https://github.com/iamacup/react-native-markdown-display-updated/raw/master/doc/images/ios-10.png"/>  | <img src="https://github.com/iamacup/react-native-markdown-display-updated/raw/master/doc/images/android-10.png"/>  
 
 </p>
 </details>
@@ -325,7 +327,7 @@ And some additional, less used options:
 
 | iOS | Android
 | --- | ---
-| <img src="https://github.com/iamacup/react-native-markdown-display/raw/master/doc/images/ios-3.png"/>  | <img src="https://github.com/iamacup/react-native-markdown-display/raw/master/doc/images/android-3.png"/>  
+| <img src="https://github.com/iamacup/react-native-markdown-display-updated/raw/master/doc/images/ios-3.png"/>  | <img src="https://github.com/iamacup/react-native-markdown-display-updated/raw/master/doc/images/android-3.png"/>  
 
 </p>
 </details>
@@ -346,7 +348,7 @@ Identify the new components and integrate the plugin with a rendered component. 
 import React from 'react';
 import { SafeAreaView, ScrollView, StatusBar } from 'react-native';
 
-import Markdown, { MarkdownIt } from 'react-native-markdown-display';
+import Markdown, { MarkdownIt } from 'react-native-markdown-display-updated';
 import blockEmbedPlugin from 'markdown-it-block-embed';
 
 const markdownItInstance = 
@@ -412,7 +414,7 @@ We need to create the **render rules** and **styles** to handle this new **'vide
 import React from 'react';
 import { SafeAreaView, ScrollView, StatusBar } from 'react-native';
 
-import Markdown, { MarkdownIt } from 'react-native-markdown-display';
+import Markdown, { MarkdownIt } from 'react-native-markdown-display-updated';
 import blockEmbedPlugin from 'markdown-it-block-embed';
 
 const markdownItInstance = 
@@ -499,7 +501,7 @@ And all of the video properties needed to render something meaningful are on the
 You can do some additional debugging of what the markdown instance is spitting out like this:
 
 ```jsx
-import Markdown, { MarkdownIt } from 'react-native-markdown-display';
+import Markdown, { MarkdownIt } from 'react-native-markdown-display-updated';
 import blockEmbedPlugin from 'markdown-it-block-embed';
 
 const markdownItInstance = 
@@ -514,11 +516,11 @@ const copy = `
 @[youtube](lJIrF4YjHfQ)
 `;
 
-// this shows you the tree that is used by the react-native-markdown-display
+// this shows you the tree that is used by the react-native-markdown-display-updated
 const astTree = markdownItInstance.parse(copy, {});
 console.log(astTree);
 
-//this contains the html that would be generated - not used by react-native-markdown-display but useful for reference
+//this contains the html that would be generated - not used by react-native-markdown-display-updated but useful for reference
 const html = markdownItInstance.render(copy);
 console.log(html);
 
@@ -725,13 +727,13 @@ Think of the implementation like applying styles in CSS. changes to the `body` e
 <details><summary>Example</summary>
 <p>
 
-<img src="https://github.com/iamacup/react-native-markdown-display/raw/master/doc/images/style-example.png"/> 
+<img src="https://github.com/iamacup/react-native-markdown-display-updated/raw/master/doc/images/style-example.png"/> 
 
 ```jsx
 import React from 'react';
 import { SafeAreaView, ScrollView, StatusBar } from 'react-native';
 
-import Markdown from 'react-native-markdown-display';
+import Markdown from 'react-native-markdown-display-updated';
 
 const copy = `
 This is some text which is red because of the body style, which is also really small!
@@ -783,7 +785,7 @@ export default App;
 
 ### Styles 
 
-Styles are used to override how certain rules are styled. The existing implementation is [here](https://github.com/iamacup/react-native-markdown-display/blob/master/src/lib/styles.js)
+Styles are used to override how certain rules are styled. The existing implementation is [here](https://github.com/iamacup/react-native-markdown-display-updated/blob/master/src/lib/styles.js)
 
 **NOTE:** By default styles are merged with the existing implementation, to change this, see the `mergeStyle` prop
 
@@ -794,7 +796,7 @@ Styles are used to override how certain rules are styled. The existing implement
 import React from 'react';
 import { SafeAreaView, ScrollView, StatusBar, StyleSheet } from 'react-native';
 
-import Markdown from 'react-native-markdown-display';
+import Markdown from 'react-native-markdown-display-updated';
 
 const styles = StyleSheet.create({
   heading1: {
@@ -859,7 +861,7 @@ export default App;
 
 ### Rules
 
-Rules are used to specify how you want certain elements to be displayed. The existing implementation is [here](https://github.com/iamacup/react-native-markdown-display/blob/master/src/lib/renderRules.js)
+Rules are used to specify how you want certain elements to be displayed. The existing implementation is [here](https://github.com/iamacup/react-native-markdown-display-updated/blob/master/src/lib/renderRules.js)
 
 <details><summary>Example Implementation</summary>
 <p>
@@ -868,7 +870,7 @@ Rules are used to specify how you want certain elements to be displayed. The exi
 import React from 'react';
 import { SafeAreaView, ScrollView, StatusBar, Text } from 'react-native';
 
-import Markdown from 'react-native-markdown-display';
+import Markdown from 'react-native-markdown-display-updated';
 
 const rules = {
     heading1: (node, children, parent, styles) =>
@@ -977,9 +979,9 @@ It is possible to overwrite this behaviour in one of two ways:
 import React from 'react';
 import { SafeAreaView, ScrollView, StatusBar } from 'react-native';
 
-import Markdown from 'react-native-markdown-display';
+import Markdown from 'react-native-markdown-display-updated';
 
-const copy = `[This is a link!](https://github.com/iamacup/react-native-markdown-display/)`;
+const copy = `[This is a link!](https://github.com/iamacup/react-native-markdown-display-updated/)`;
 
 const onLinkPress = (url) => {
     if (url) {
@@ -1021,7 +1023,7 @@ export default App;
 <details><summary>Using a Custom Rule</summary>
 <p>
 
-You will need to overwrite one or both of `link` and `blocklink`, the original defenitions can be [found here](https://github.com/iamacup/react-native-markdown-display/blob/master/src/lib/renderRules.js)
+You will need to overwrite one or both of `link` and `blocklink`, the original defenitions can be [found here](https://github.com/iamacup/react-native-markdown-display-updated/blob/master/src/lib/renderRules.js)
 
 Something like this with `yourCustomHandlerFunctionOrLogicHere`:
 
@@ -1029,9 +1031,9 @@ Something like this with `yourCustomHandlerFunctionOrLogicHere`:
 import React from 'react';
 import { SafeAreaView, ScrollView, StatusBar, Text } from 'react-native';
 
-import Markdown from 'react-native-markdown-display';
+import Markdown from 'react-native-markdown-display-updated';
 
-const copy = `[This is a link!](https://github.com/iamacup/react-native-markdown-display/)`;
+const copy = `[This is a link!](https://github.com/iamacup/react-native-markdown-display-updated/)`;
 
 const rules = {
   link: (node, children, parent, styles) => {
@@ -1080,7 +1082,7 @@ This example will stop images and links.
 import React from 'react';
 import { SafeAreaView, ScrollView, StatusBar, Text } from 'react-native';
 
-import Markdown, { MarkdownIt } from 'react-native-markdown-display';
+import Markdown, { MarkdownIt } from 'react-native-markdown-display-updated';
 
 const copy = `
 # This heading will show with formatting
@@ -1118,13 +1120,13 @@ A full list of things you can turn off is [here](https://github.com/markdown-it/
 
 ### Pre Processing
 
-It is possible to need to pre-process the data outside of this library ([related discussion here](https://github.com/iamacup/react-native-markdown-display/issues/79)). As a result, you can pass an AST tree directly as the children like this:
+It is possible to need to pre-process the data outside of this library ([related discussion here](https://github.com/iamacup/react-native-markdown-display-updated/issues/79)). As a result, you can pass an AST tree directly as the children like this:
 
 ```jsx
 import React from 'react';
 import { SafeAreaView, ScrollView, StatusBar, Text } from 'react-native';
 
-import Markdown, { MarkdownIt, tokensToAST, stringToTokens } from 'react-native-markdown-display';
+import Markdown, { MarkdownIt, tokensToAST, stringToTokens } from 'react-native-markdown-display-updated';
 
 const markdownItInstance = MarkdownIt({typographer: true});
 
